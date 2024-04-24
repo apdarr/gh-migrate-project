@@ -9,7 +9,7 @@ import { GraphqlResponseError } from '@octokit/graphql';
 import semver from 'semver';
 import { PostHog } from 'posthog-node';
 
-import { actionRunner, checkForUpdates, logRateLimitInformation } from '../utils.js';
+import { actionRunner, checkForUpdates } from '../utils.js';
 import VERSION from '../version.js';
 import { Logger, createLogger } from '../logger.js';
 import { createOctokit } from '../octokit.js';
