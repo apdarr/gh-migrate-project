@@ -447,6 +447,10 @@ command
         );
       }
 
+      if (proxyUrl) {
+        logger.info(`⭐️ Using proxy ⭐️: ${proxyUrl}`);
+      }
+
       const octokit = createOctokit(accessToken, baseUrl, proxyUrl, logger);
 
       const shouldCheckRateLimitAgain = await logRateLimitInformation(logger, octokit);
